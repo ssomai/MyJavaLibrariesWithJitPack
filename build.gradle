@@ -1,14 +1,10 @@
 
 
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '3.3'
-}
 
-
-allprojects {
-    version = "1.0"
-}
+//allprojects {
+//    version = "1.0"
+//}
 
 subprojects {
     apply plugin: 'java'
@@ -34,4 +30,10 @@ subprojects {
         archives sourcesJar
 //        archives javadocJar
     }
+}
+
+
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.3'
 }
