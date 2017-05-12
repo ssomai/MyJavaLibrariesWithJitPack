@@ -1,0 +1,23 @@
+version '0.9'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.7
+
+//repositories {
+//    mavenCentral()
+//}
+
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+}
+
+
+dependencies {
+    compile 'mysql:mysql-connector-java:5.1.38'
+    compile 'org.jooq:jooq:3.9.1'
+    compile 'org.jooq:jooq-codegen:3.9.1'
+}
