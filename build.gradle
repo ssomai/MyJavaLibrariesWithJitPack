@@ -6,9 +6,9 @@ task wrapper(type: Wrapper) {
 }
 
 
-//allprojects {
-//    version = "1.0"
-//}
+allprojects {
+    version = "1.0"
+}
 
 subprojects {
     apply plugin: 'java'
