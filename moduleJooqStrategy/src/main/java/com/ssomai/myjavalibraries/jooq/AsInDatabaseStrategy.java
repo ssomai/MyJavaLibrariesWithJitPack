@@ -1,4 +1,4 @@
-package com.myvalet;
+package com.ssomai.myjavalibraries.jooq;
 
 
 import org.jooq.util.DefaultGeneratorStrategy;
