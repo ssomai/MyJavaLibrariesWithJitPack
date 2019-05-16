@@ -1,8 +1,9 @@
 package com.ssomai.myjavalibraries.jooq;
 
 
-import org.jooq.util.DefaultGeneratorStrategy;
-import org.jooq.util.Definition;
+import org.jooq.codegen.DefaultGeneratorStrategy;
+import org.jooq.codegen.GeneratorStrategy;
+import org.jooq.meta.Definition;
 
 import java.io.Serializable;
 import java.util.Arrays;
@@ -29,7 +30,7 @@ public class AsInDatabaseStrategy extends DefaultGeneratorStrategy {
      * setters "set[NAME_IN_DATABASE]"
      */
     @Override
-    public String getJavaSetterName(Definition definition, Mode mode) {
+    public String getJavaSetterName(Definition definition, GeneratorStrategy.Mode mode) {
         return "set" + definition.getOutputName();
     }
 
@@ -37,7 +38,7 @@ public class AsInDatabaseStrategy extends DefaultGeneratorStrategy {
      * Just like setters...
      */
     @Override
-    public String getJavaGetterName(Definition definition, Mode mode) {
+    public String getJavaGetterName(Definition definition, GeneratorStrategy.Mode mode) {
         return "get" + definition.getOutputName();
     }
 
@@ -119,4 +120,6 @@ public class AsInDatabaseStrategy extends DefaultGeneratorStrategy {
     public String getOverloadSuffix(Definition definition, Mode mode, String overloadIndex) {
         return "_OverloadIndex_" + overloadIndex;
     }
+
+
 }

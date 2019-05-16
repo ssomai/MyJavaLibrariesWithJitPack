@@ -18,6 +18,15 @@ repositories {
 
 dependencies {
 //    compile 'mysql:mysql-connector-java:5.1.38'
-    compile 'org.jooq:jooq:3.6.1'
-    compile 'org.jooq:jooq-codegen:3.6.1'
+//    compile 'org.jooq:jooq:3.6.1'
+//    compile 'org.jooq:jooq-codegen:3.6.1'
+
+//    compile 'org.jooq:jooq:3.10.4'
+//    compile 'org.jooq:jooq-codegen:3.10.4'
+
+    compile 'org.jooq:jooq:3.11.11'
+    compile 'org.jooq:jooq-codegen:3.11.11'
+    compile 'org.jooq:jooq-meta:3.11.11'
+
+//    compile 'org.jooq:jooq:3.10.4'
 }
