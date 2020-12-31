@@ -1,3 +1,4 @@
+include 'moduleJava'
 include 'moduleJooqStrategy'
 include 'moduleTestLibrary'
 include 'moduleJooqAndroid'

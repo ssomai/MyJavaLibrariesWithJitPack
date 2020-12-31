@@ -1,0 +1,57 @@
+// version '0.9'
+
+
+plugins {
+    id 'java'
+    id 'idea' // optional (to generate IntelliJ IDEA project files)
+}
+
+//apply plugin: 'java'
+
+//sourceCompatibility = 1.8
+
+//repositories {
+//    mavenCentral()
+//}
+
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+}
+
+
+dependencies {
+//    compile 'mysql:mysql-connector-java:5.1.38'
+//    compile 'org.jooq:jooq:3.6.1'
+//    compile 'org.jooq:jooq-codegen:3.6.1'
+
+//    compile 'org.jooq:jooq:3.10.4'
+//    compile 'org.jooq:jooq-codegen:3.10.4'
+
+//    compile 'org.jooq:jooq:3.11.11'
+//    compile 'org.jooq:jooq-codegen:3.11.11'
+//    compile 'org.jooq:jooq-meta:3.11.11'
+
+//    compile 'org.jooq:jooq:3.10.4'
+
+//    testImplementation(platform('org.junit:junit-bom:5.7.0'))
+//    testImplementation('org.junit.jupiter:junit-jupiter')
+}
+
+//test {
+//    useJUnitPlatform()
+//    testLogging {
+//        events "passed", "skipped", "failed"
+//    }
+//}
+
+
+compileJava.options.encoding = 'UTF-8'
+// 소스 인코딩 지정방법 1
+[compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+// 소스 인코딩 지정밥법 2
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
