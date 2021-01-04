@@ -202,6 +202,19 @@ public class Tool_Java {
         }
     }
 
+    public static boolean compareString(String pStr1, String pStr2) {
+        if(isStringBlank(pStr1) == true) {
+            return isStringBlank(pStr2) != false;
+        }
+        if(isStringBlank(pStr1) == false) {
+            if(isStringBlank(pStr2) == true) {
+                return false;
+            }
+        }
+        return pStr1.compareTo(pStr2) == 0;
+    }
+
+
     static {
         FORMATTER_UTC_Month = new SimpleDateFormat("yyyy-MM");
         FORMATTER_UTC_Month.setTimeZone(getTimeZone_UTC());
